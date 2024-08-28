@@ -11,6 +11,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@mdi/font": "^7.4.47",
     "splitter": "file:",
     "vue": "^3.4.29",
     "vuetify": "^3.7.0"
