@@ -1,19 +1,28 @@
 <template>
-  <div class="mode-one">
+  <v-card class="mode-one pa-4">
     <v-row>
       <v-col cols="12">
-        <h2>The character you want to take</h2>
+        <h3>Select char with start and end position</h3>
       </v-col>
     </v-row>
     <v-row class="text-center align-center">
       <v-col cols="5">
-        <v-text-field variant="outlined" label="Start" hide-details type="number" v-model="start"></v-text-field>
+        <v-text-field 
+          variant="outlined" 
+          label="Start" 
+          type="number" 
+          hide-details 
+          v-model="start">
+        </v-text-field>
       </v-col>
       <v-col cols="2">
         <label>to</label>
       </v-col>
       <v-col cols="5">
-        <v-text-field variant="outlined" label="End" hide-details type="number" v-model="end"></v-text-field>
+        <v-text-field 
+          variant="outlined" 
+          label="End" 
+          hide-details type="number" v-model="end"></v-text-field>
       </v-col>
     </v-row>
     <v-row>
@@ -22,7 +31,7 @@
         <label v-if="result.length > 0">{{ result.length }}</label>
       </v-col>
     </v-row>
-  </div>
+  </v-card>
 </template>
 
 <script>

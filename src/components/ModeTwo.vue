@@ -1,8 +1,8 @@
 <template>
-  <div class="mode-two">
+  <v-card class="mode-two pa-4">
     <v-row>
       <v-col cols="12">
-        <h2>The character you want to take</h2>
+        <h3>Split sequence by length</h3>
       </v-col>
     </v-row>
     <v-row 
@@ -33,6 +33,7 @@
         <v-col cols="1">
             <v-btn 
                 flat
+                size="small"
                 density="compact" 
                 icon="mdi-minus" 
                 color="warning" 
@@ -44,6 +45,7 @@
         <v-col cols="1">
             <v-btn 
                 flat
+                size="small"
                 density="compact" 
                 icon="mdi-plus" 
                 color="primary" 
@@ -53,6 +55,7 @@
         <v-col cols="2">
             <v-btn 
                 flat
+                size="small"
                 density="compact" 
                 prepend-icon="$vuetify" 
                 color="success" 
@@ -63,7 +66,7 @@
             </v-btn>
         </v-col>
     </v-row>
-  </div>
+  </v-card>
 </template>
 
 <script>
